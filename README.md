@@ -1,3 +1,23 @@
+# Firebase Config
+
+To run the app, you will have to create a `firebaseConfig.js` file inside the `firebase` folder. This new file should look like this:
+```
+import firebase from 'firebase/app';
+
+firebase.initializeApp({
+  apiKey: "",
+  authDomain: "",
+  projectId: "",
+  storageBucket: "",
+  messagingSenderId: "",
+  appId: "",
+  measurementId: ""
+});
+
+export default firebase;
+```
+Replace the blank fields with your firebase app data.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
